@@ -1,0 +1,111 @@
+/* añadimos la fuente woff2 va primero, después woff, que será para internet explorer. @font-face debemos añadirlo para cada tipografia que deseemos. Por ejemplo también deberiamos instalar las negritas(bold), o las cursivas (italic) aunque se puede hacer un apaño con font-weight: bold, o font-weight: 700(p.ej) o font-style: italic*/
+
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/roboto-regular.woff2) format(woff2), 
+       url(../fonts/roboto-regular.woff) format(woff);
+}
+
+/* soluciona problemas con los paddings, para que el padding no engrose el tamaño de nuestras cajas. se pone asterisco cuando le damos la orden a todo */
+*{
+  box-sizing: border-box;
+}
+
+/* añadimos la tipografia roboto en html y sino que use la sans serif */
+
+html{
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+/* si hemos puesto links en el footer <a></a>, debemos quitar el subrayado con text-decoration: none; y también ponerlo en color blanco con color: white; */
+
+/* si los miramos en el navegador, boton derecho > inspeccionar, vemos que debemos eliminar margins en h5, h6 y ul*/
+
+h5, ul{
+  margin-top: 0;
+}
+h6{
+  margin-bottom: 0;
+}
+
+footer{
+    background-color:#2385E0;
+    font-size: 18px;
+    color: white; 
+    padding: 20px; 
+}
+
+.links{
+  display: flex;
+}
+
+/* los h5 y h6, aunque estan dentro de footer no son hijos directos, por tanto hay que decirles que cambien el tamaño */
+
+h5, h6{
+  font-size: 18px;
+}
+
+/* vamos a usar los flex:grow para ordenar redes, acerca de y términos. Se basa en que ocupan el lugar que dejan los demás cambiando el número de detrás */
+
+/* REDES */
+
+.redes {
+  flex-grow: 0.2;
+}
+  .redes__titulo {
+    font-family: "roboto", sans-serif;
+    font-weight: bold;
+  }
+  .redes__twitter {
+  }
+  .redes__pinterest {
+  }
+  .redes__facebook {
+  }
+
+
+/* ACERCA */
+
+.acerca {flex-grow: 2;
+}
+  .acerca__titulo {
+    font-family: "roboto", sans-serif;
+    font-weight: bold;
+  }
+  .acerca__garantia {
+  }
+  .acerca__inversiones {
+  }
+  .acerca__historia {
+  }
+
+
+/* TERMINOS */
+
+.terminos {flex-grow: 1;
+}
+  .terminos__titulo {
+    font-family: "roboto", sans-serif;
+    font-weight: bold;
+  
+  }
+  .terminos__cookies {
+  }
+  .terminos__privacidad {
+  }
+  .terminos__condiciones {
+  }
+  .terminos__avisos {
+  }
+
+
+/* COPYRIGHT */
+
+.copyright {
+  text-align: center;
+}

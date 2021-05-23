@@ -1,0 +1,49 @@
+
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/roboto-regular.woff2) format(woff2), 
+       url(../fonts/roboto-regular.woff) format(woff);
+}
+
+html{
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+}
+
+
+
+
+body {
+  
+  justify-content: center;
+  box-sizing: border-box;
+
+
+  
+}
+/* imagen y texto superior */
+
+.edificio {display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+.edificio__img {
+}
+.edificio__texto {margin-left: 20px;
+}
+.edificio__texto__parrafo {
+}
+
+/* imagen y texto inferior */
+
+.calle {display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+}
+.calle__img {
+}
+.calle__texto {margin-right: 20px;
+}
+.calle__texto__parrafo {
+}
