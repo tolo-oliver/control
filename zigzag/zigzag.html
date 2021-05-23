@@ -5,35 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="zigzag.css">
 </head>
 <body>
 
-    <figure class="edificio">
+         <figure class="edificio">
 
         <picture>
 
             <!-- toma de decisiones -->
 
-<source srcset="
-./img/edificio.jpg 1x,
-./img/edificio@2x.jpg 2x,
-./img/edificio@3x.jpg 3x,
+            <source srcset="
+            ./img/edificio.jpg 1x,
+            ./img/edificio@2x.jpg 2x,
+            ./img/edificio@3x.jpg 3x,">
 
-">
+            <!-- insertar imagenes en el navegador -->
 
-<!-- insertar imagenes en el navegador -->
-
-<img class="edificio__img" src="" alt="edificio">
+        <img class="edificio__img" src="" alt="edificio">
 
         </picture>
-        <figcaption>
-            <p class="edificio__parrafo">
+            <figcaption class="edificio__texto">
+                <p class="edificio__texto__parrafo">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vulputate aenean mi amet eget ornare facilisi. Feugiat cursus sapien, facilisis morbi tristique. Id pretium posuere praesent odio massa justo. Ut nunc hendrerit tellus, venenatis massa interdum elit, dictumst. Dignissim enim egestas lacus rutrum sagittis. Sed sed pellentesque ut fermentum mauris. Nunc gravida risus eget ut lectus.
                 allis amet. Facilisi mauris aliquam cursus a.
             </p>
-        </figcaption>
-    </figure>
+            </figcaption>
+        </figure>
 
     <figure class="calle">
 
@@ -41,20 +40,18 @@
 
             <!-- toma de decisiones -->
 
-<source srcset="
-./img/calle.jpg 1x,
-./img/calle@2x.jpg 2x,
-./img/calle@3x.jpg 3x,
-
-">
+        <source srcset="
+        ./img/calle.jpg 1x,
+        ./img/calle@2x.jpg 2x,
+        ./img/calle@3x.jpg 3x,">
 
 <!-- insertar imagenes en el navegador -->
 
-<img class="calle__img" src="" alt="calle">
+    <img class="calle__img" src="" alt="calle">
 
         </picture>
-        <figcaption>
-            <p class="calle__parrafo">
+        <figcaption class="calle__texto">
+            <p class="calle__texto__parrafo">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est vulputate aenean mi amet eget ornare facilisi. Feugiat cursus sapien, facilisis morbi tristique. Id pretium posuere praesent odio massa justo. Ut nunc hendrerit tellus, venenatis massa interdum elit, dictumst. Dignissim enim egestas lacus rutrum sagittis. Sed sed pellentesque ut fermentum mauris. Nunc gravida risus eget ut lectus.
                 onvallis amet. Facilisi mauris aliquam cursus a.
             </p>
